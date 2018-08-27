@@ -1,0 +1,30 @@
+
+spring:
+#  zipkin:
+#    base-url: http://kadan1:7777
+#  sleuth:
+#    sampler:
+#      percentage: 1.0
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Kadan7/config.git
+          search-paths: demo/
+          username: kadan1984@126.com
+          password: '{cipher}3499ef31d13e49c54a6e0c584b43dc713dd8b4b742344e651448161605fd1ab0'
+          default-label: master
+server:
+  port: 8082
+
+#eureka:
+#  client:
+#    registerWithEureka: true
+#    fetchRegistry: true
+#    serviceUrl:
+#      defaultZone: http://kadan2:8762/eureka/
+#  server:
+#    waitTimeInMsWhenSyncEmpty: 0
+#    enableSelfPreservation: false
+#  instance:
+#    hostname: kadan1

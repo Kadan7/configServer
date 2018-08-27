@@ -15,7 +15,7 @@ spring:
           password: '{cipher}3499ef31d13e49c54a6e0c584b43dc713dd8b4b742344e651448161605fd1ab0'
           default-label: master
 server:
-  port: 8082
+  port: 8080
 
 #eureka:
 #  client:
